@@ -4,6 +4,7 @@ RUN apk add --update --no-cache \
     ca-certificates \
     curl \
     wget \
+    cmake \
     build-base \
     git \
     bash \
@@ -11,5 +12,10 @@ RUN apk add --update --no-cache \
     make \
     gcc \
     g++ \
+    zlib-dev \
+    autoconf \
+    automake \
+    file \
+    nasm \
   && update-ca-certificates \
   && rm -rf /var/cache/apk/*
